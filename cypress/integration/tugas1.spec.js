@@ -36,11 +36,11 @@ describe('User menuju ke halaman login dengan memasukkan url siakad', () => {
         cy.get('[type="checkbox"]').click()
     });
 
-    // it('Tes User klik lupa Password', () => {
-    //     cy.visit("http://siakad.polinema.ac.id/","")
-    //     cy.contains('Lupa Password?')
-    //     cy.get('#forget-password').click()
-    // });
+    it('Tes User klik lupa Password', () => {
+        cy.visit("http://siakad.polinema.ac.id/","")
+        cy.contains('Lupa Password?')
+        cy.get('#chk_tampilkan')
+    });
     
     it('Tes User masuk dengan mengkosongkan Username dan Password', () => {
         cy.visit("http://siakad.polinema.ac.id/")
